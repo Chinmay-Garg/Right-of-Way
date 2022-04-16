@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block content %}
+	<script type="text/javascript" src="{{ url_for('static', filename = 'welcome.js') }}"></script> 
+
+	<br><br>
+		<div class="container">
+			<h1>Who Has the Right-of-Way?</h1>
+			<br><br>
+			<div class = "row">
+				<div class="col-6">
+					<p>Learn</p>
+				</div>
+				<div class="col-6">
+					<p>Test</p>
+				</div>
+			</div>
+		</div>
+{% endblock %}
