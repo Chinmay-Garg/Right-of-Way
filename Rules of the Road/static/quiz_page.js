@@ -26,7 +26,7 @@ $(document).ready(function(){
 
 		if($("#testPrevious").show()){
 			let prevIdx = parseInt(currentIdx) - 1
-			let url = "/learn/" + prevIdx
+			let url = "/quiz/" + prevIdx
             location.href = url
 			console.log("updated: " + prevIdx)
 		}
@@ -38,12 +38,12 @@ $(document).ready(function(){
 
 		if($("#testNext").show()){
 			if(currentIdx == 5){
-				let url = "/quiz"
+				let url = "/quiz/end"
 				location.href = url
 			}
 			else{
 				let nextIdx = parseInt(currentIdx) + 1
-				let url = "/learn/" + nextIdx
+				let url = "/quiz/" + nextIdx
 				location.href = url
 			}
 
