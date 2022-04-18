@@ -135,6 +135,8 @@ questions = {
 	}
 }
 
+answers = {1:["B"], 2:["B"], 3:["A"], 4:["B"], 5:["Right"], 6:["C", "A", "B"]}
+
 # ROUTES
 @app.route('/')
 def hello_world():
@@ -153,7 +155,9 @@ def quizpage(idx=None):
 			return render_template('quiz_page.html', questions=questions[question])		
 	return render_template('quiz_page.html', questions={})
 
-
+@app.route('/answers')
+def answers():
+	return answers
 # AJAX FUNCTIONS
 
 
