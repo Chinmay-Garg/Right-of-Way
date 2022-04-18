@@ -4,14 +4,23 @@
 	<script type="text/javascript" src="{{ url_for('static', filename = 'restaurant_result.js') }}"></script>
 	
 	<script>
-        //let questions = {{questions|tojson}} 
+        //let questions = {{questions|tojson}}
     </script>
 
 		<br><br>
 		<div class="container">
 			{{questions.prompt}}
+			<br><br>
 			{{questions.terrain}}
+			<br><br>
 			{{questions.cars_from}}
+			<br><br>
 			{{questions.cars_to}}
 		</div>
+
+		<div class="row">
+			<button id="testPrevious">Previous</button>
+			<button id="testNext">Next</button>
+		</div>
+
 {% endblock %}
