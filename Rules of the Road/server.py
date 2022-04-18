@@ -142,12 +142,16 @@ answers = {1:["B"], 2:["B"], 3:["A"], 4:["B"], 5:["Right"], 6:["C", "A", "B"]}
 def hello_world():
    return render_template('welcome.html')
 
-@app.route('/view/<idx>')
+@app.route('/learn/<idx>')
 def learningpage(idx=None):
 	global topic
 	topic = topics[idx]
 
 	return render_template('learning_page.html', topic=topic)
+
+@app.route('/quiz')
+def transitionpage():
+	return render_template('quiz_home.html')
 
 @app.route('/quiz/<idx>')
 def quizpage(idx=None):

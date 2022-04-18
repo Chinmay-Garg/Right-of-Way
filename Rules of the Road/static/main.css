@@ -93,4 +93,27 @@ a {
 button{
     border-radius: 20px;
     background-color: #D0DFF0;
+    padding-left: 10px;
+    padding-right: 10px;
 }
+
+#learnNext{
+    margin-left: 50px;
+    background-color: #1e5799;
+    color: white;
+}
+
+.quizStart{
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold; 
+}
+
+#startQuizButton{
+    display: flex;
+    margin: auto;
+    background-color: #1e5799;
+    color: white;
+
+}
+  
