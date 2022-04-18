@@ -1,14 +1,49 @@
 {% extends "layout.html" %}
 
 {% block content %}
-	<script type="text/javascript" src="{{ url_for('static', filename = 'restaurant_result.js') }}"></script>
-	
-	<script>
-        //let topics = {{topics|tojson}} 
+<script type="text/javascript" src="{{ url_for('static', filename = 'learning_page.js') }}"></script>
+
+<script>
+        
+		let topic = {{topic|tojson}}
+		console.log("current topic: " + topic) 
+		
     </script>
 
-		<br><br>
-		<div class="container">
-			
+<head>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+</head>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="title">{{topic.title}}</div>
 		</div>
+	</div>
+
+	<br><br>
+
+	<div class="row">
+		<div class="col-md-6">
+			<iframe src={{topic.video}} class="video" title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen>
+			</iframe>
+
+		</div>
+		<div class="col-md-6">
+			<!--placeholder image-->
+			<image src={{topic.image}} class="learnImage"></image>
+			<br><br>
+			<div>{{topic.summary}}</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<button id="learnPrevious">Previous</button>
+		<button id="learnNext">Next</button>
+	</div>
+
+	
+</div>
 {% endblock %}

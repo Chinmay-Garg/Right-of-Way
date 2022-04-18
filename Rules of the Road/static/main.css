@@ -77,3 +77,20 @@ a {
     display: inline-block;
     font-size: 20px;
 }
+
+.video{
+    display: inline-block;
+    margin: auto;
+}
+
+.learnImage{
+    width: 50%;
+    height: auto;
+    display: inline-block;
+    margin: auto;
+}
+
+button{
+    border-radius: 20px;
+    background-color: #D0DFF0;
+}
