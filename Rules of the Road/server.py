@@ -112,15 +112,18 @@ questions = {
 def hello_world():
    return render_template('welcome.html')
 
-@app.route('/view/<id>')
-def learningpage(id=None):
+@app.route('/view/<idx>')
+def learningpage(idx=None):
 
 	return render_template('learning_page.html', topics=topics)
 
-@app.route('/quiz/<id>')
-def quizpage(id=None):
-
-	return render_template('quiz_page.html', questions=questions)
+@app.route('/quiz/<idx>')
+def quizpage(idx=None):
+	for question in questions:
+		print(question, questions[question])
+		if question == idx:
+			return render_template('quiz_page.html', questions=questions[question])		
+	return render_template('quiz_page.html', questions={})
 
 # AJAX FUNCTIONS
 
