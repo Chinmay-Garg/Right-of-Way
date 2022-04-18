@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$('#learn').click(function(){
-		window.location.href='/view/1';
+		window.location.href='/learn/1';
 	})
 
 	$('#test').click(function(){
