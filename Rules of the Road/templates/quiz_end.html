@@ -4,12 +4,19 @@
 	<script type="text/javascript" src="{{ url_for('static', filename = 'quiz_page.js') }}"></script>
 	
 	<script>
-        //let questions = {{questions|tojson}} 
+        let questions = {{questions|tojson}} 
     </script>
 
 		<br><br>
 		<div class="container">
-			{{questions.answer}}
-			Congrats, you've completed the quiz!
+			<!-- {{questions.answer}} -->
+			<div class="quizStart">
+				Congrats, you've completed the quiz!
+			</div>
+			<br><br>
+			<div>
+				You got 4 out of 6 correct!
+			</div>
+
 		</div>
 {% endblock %}

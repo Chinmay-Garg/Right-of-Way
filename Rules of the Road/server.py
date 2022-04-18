@@ -153,6 +153,14 @@ def learningpage(idx=None):
 def transitionpage():
 	return render_template('quiz_home.html')
 
+@app.route('/quiz/end')
+def quizendpage(idx=None):
+	for question in questions:
+		print(question, questions[question])
+		if question == idx:
+			return render_template('quiz_page.html', questions=questions[question])	
+	return render_template('quiz_end.html', questions={})
+
 @app.route('/quiz/<idx>')
 def quizpage(idx=None):
 	for question in questions:
