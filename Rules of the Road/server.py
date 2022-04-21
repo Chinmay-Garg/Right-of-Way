@@ -17,20 +17,20 @@ topics = {
 		"title": "Controlled Intersections: FIFO",
 		"image": "https://static.epermittest.com/media/filer_public_thumbnails/filer_public/a7/c7/a7c7623e-b7ba-46b8-a2bd-146572859e97/right-of-way-at-intersections.jpg__1920x0_q100_subsampling-2_upscale.jpg",
 		"video": "https://www.youtube.com/embed/VWXgqPzADGQ?start=18&end=43",
-		"summary": "A controlled intersection a point where multiple roads cross over, and it being controlled means it has signs, traffic lights, and/or road signs to guide drivers.  " +
+		"summary": "A controlled intersection a point where multiple roads cross over, and it being controlled means it has signs, traffic lights, and/or road signs to guide drivers. " +
 		"A tool to manage who goes first is FIFO, or first in, first out, meaning the driver that stops at the intersection first has the right of way." 
 	},
 	"3": {
 		"title": "Controlled Intersections: Rightmost side",
 		"image": "https://static.epermittest.com/media/filer_public_thumbnails/filer_public/a7/c7/a7c7623e-b7ba-46b8-a2bd-146572859e97/right-of-way-at-intersections.jpg__1920x0_q100_subsampling-2_upscale.jpg",
 		"video": "https://www.youtube.com/embed/VWXgqPzADGQ?start=43&end=92",
-		"summary": "In the case where multiple cars get to the intersection at the same time, he driver on the rightmost side should go first. If there are four cars in the intersection, whoever slowly advances first should go."
+		"summary": "In the case where multiple cars get to the intersection at the same time, he driver on the rightmost side should go first. If there are four cars in the intersection, whoever slowly advances first should go. "
 	},
 	"4": {
 		"title": "Uncontrolled Intersections: Pedestrians",
 		"image": "https://1.bp.blogspot.com/-2HZxRE3jUcM/X3hNmgE0S9I/AAAAAAAAA_8/m_qWBreBUnswSgBe011H9bWdoLHvSum6QCLcBGAsYHQ/w1200-h630-p-k-no-nu/two-cars-uncontrolled-intersection.jpg",
 		"video": "https://www.youtube.com/embed/zbc-SVuHTKo?start=60&end=81",
-		"summary": "An uncontrolled intersection has no stop signs or traffic lights. This makes yielding to right of way extra important." +
+		"summary": "An uncontrolled intersection has no stop signs or traffic lights. This makes yielding to right of way extra important. " +
 		"The right of way should always be given to pedestrians." 
 	},
 	"5": {
