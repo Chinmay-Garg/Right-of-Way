@@ -32,6 +32,7 @@ $(document).ready(function(){
 		}
 
 	})
+	buildTerrain(question.terrain, question.cars_from, question.cars_to)
 
 	$("#testNext").click(function(){
 		console.log("clicked next")
@@ -53,3 +54,52 @@ $(document).ready(function(){
 
 	})
 })
+
+function buildTerrain(terrain, cars_from, cars_to) {
+	// console.log(cars_from)
+	
+	for(var r in terrain) {
+		let row = $('<div class="block-row">')
+		let i = terrain[r]
+		for(var column in i) {
+			let j = i[column]
+			let div;
+			if(j == "0") {
+				div = $('<div class="block grass">')
+			} else if (j == "1") {
+				div = $(`<div data-x="${r}" data-y="${column}" class="block road">`)
+				for(let [key, value] of Object.entries(cars_to)) {
+					let x = value[0]
+					let y = value[1]
+					if(x == parseInt(r) && y == parseInt(column)) {
+						div.addClass('droppable')
+						$(div).droppable({
+							classes: {
+								"ui-droppable-hover": "ui-state-hover",
+								"ui-droppable-active": "ui-state-default"
+							  },
+							accept: "#"+key
+						})
+					}
+				}
+			}
+			for(let [key, value] of Object.entries(cars_from)) {
+				let x = value[0]
+				let y = value[1]
+				if(x == parseInt(r) && y == parseInt(column)) {
+					let car = $('<div class="block car">')
+					car.attr('id', key)
+					let arrow = $('<img class="arrow-image" src="/static/right-traffic-arrow-hi.png">')
+					car.append(arrow)
+					div.append(car)
+				}
+			}
+			row.append(div)
+		}
+		$('.terrain').append(row)
+	}
+	$(".car").draggable({
+		revert: "invalid",
+		stack: ".draggable"
+	});
+}

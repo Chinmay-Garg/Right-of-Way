@@ -27,13 +27,15 @@
 
 	<div class="row">
 		<div class="col-md-6">
-			<iframe src={{topic.video}} class="video" title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen>
-			</iframe>
+			<div class="videoWrap">
+				<iframe src={{topic.video}} class="video" title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen>
+				</iframe>
+			</div>
 
 		</div>
 		<div class="col-md-6">
 			<!--placeholder image-->
-			<image src={{topic.image}} class="learnImage"></image>
+			<image src={{topic.image}} class="img-responsive d-block mx-auto"></image>
 			<br><br>
 			<div>{{topic.summary}}</div>
 		</div>

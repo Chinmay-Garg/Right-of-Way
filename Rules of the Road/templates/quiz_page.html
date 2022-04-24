@@ -1,6 +1,9 @@
 {% extends "layout.html" %}
 
 {% block content %}
+	<script>
+		let question = {{questions|tojson}}
+	</script>
 	<script type="text/javascript" src="{{ url_for('static', filename = 'quiz_page.js') }}"></script>
 	
 	<script>
@@ -8,19 +11,15 @@
     </script>
 
 		<br><br>
-		<div class="container">
-			{{questions.prompt}}
-			<br><br>
-			{{questions.terrain}}
-			<br><br>
-			{{questions.cars_from}}
-			<br><br>
-			{{questions.cars_to}}
+		<div class="quiz-container">
+			<h3>{{questions.prompt}}</h3>
+			<div class="terrain mt-4"></div>
+			<!-- {{questions.terrain}} -->
+			<div class="row mt-4">
+				<button id="testPrevious">Previous</button>
+				<button id="testNext">Next</button>
+			</div>
 		</div>
 
-		<div class="row">
-			<button id="testPrevious">Previous</button>
-			<button id="testNext">Next</button>
-		</div>
 
 {% endblock %}

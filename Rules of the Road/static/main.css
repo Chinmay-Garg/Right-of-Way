@@ -27,6 +27,7 @@ a {
     background-color: #D0DFF0;
     border-radius: 25px;
     padding: 20px;
+    font-size: 36px;
 }
 
 .header {
@@ -79,15 +80,29 @@ a {
 }
 
 .video{
-    display: inline-block;
+    display: flex;
+    align-items: center;
     margin: auto;
 }
 
+.videoWrap{
+    position: relative;
+    padding-bottom: 56%;
+    height: 0;
+}
+
+.videoWrap iframe{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 95%;
+    height: 95%
+}
+
 .learnImage{
-    width: 50%;
+    width: 75%;
     height: auto;
     display: inline-block;
-    margin: auto;
 }
 
 button{
@@ -121,4 +136,59 @@ button{
     margin-left: 100px;
     background-color: #D0DFF0;
 }
-  
+
+.quiz-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.quiz-container h3 {
+    width: 100%;
+}
+
+.terrain {
+    display: flex;
+    flex-direction: column;
+}
+
+.terrain .block-row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.terrain .block {
+    width: 70px;
+    height: 70px;
+}
+
+.terrain .grass {
+    background-color: green;
+}
+
+.terrain .road {
+    background-color: gray;
+}
+
+.terrain .droppable {
+    background-color: yellow;
+    opacity: 0.2;
+}
+
+.terrain .car {
+    background-color: yellow;
+    z-index: 2;
+    position: relative;
+}
+
+.terrain .car .arrow-image {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
