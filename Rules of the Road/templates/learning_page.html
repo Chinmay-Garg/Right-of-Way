@@ -18,7 +18,7 @@
 
 <div class="container">
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-md-12 mt-4">
 			<div class="title">{{topic.title}}</div>
 		</div>
 	</div>
@@ -26,24 +26,43 @@
 	<br><br>
 
 	<div class="row">
-		<div class="col-md-6">
+		<div class="col-md-12">
 			<div class="videoWrap">
-				<iframe src={{topic.video}} class="video" title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen>
+				<iframe src="{{topic.video}}" class="video" title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen>
 				</iframe>
 			</div>
 
 		</div>
-		<div class="col-md-6">
-			<!--placeholder image-->
-			<image src={{topic.image}} class="img-responsive d-block mx-auto"></image>
-			<br><br>
-			<div>{{topic.summary}}</div>
-		</div>
 	</div>
 
-	<div class="row">
-		<button id="learnPrevious">Previous</button>
-		<button id="learnNext">Next</button>
+	<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<div class="modal-header">
+				<h5 class="modal-title">Summary</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				</div>
+				<div class="modal-body">
+				<div class="col-md-12">
+					<image src={{topic.image}} class="img-responsive d-block mx-auto"></image>
+					<br><br>
+					<div>{{topic.summary}}</div>
+				</div>
+				</div>
+				<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="text-center mt-3 pb-4">
+		<button id="learnPrevious" class="btn btn-secondary">Previous</button>
+		<button id="summary" data-toggle="modal" data-target=".bd-example-modal-lg" class="btn btn-primary">Summary</button>
+		<button id="learnNext" class="btn btn-primary">Next</button>
 	</div>
 
 	

@@ -73,7 +73,8 @@ function buildTerrain(terrain, cars_from, cars_to) {
 					let y = value[1]
 					if(x == parseInt(r) && y == parseInt(column)) {
 						div.addClass('droppable')
-						$(div).droppable({
+						console.log(div)
+						$('.droppable').droppable({
 							classes: {
 								"ui-droppable-hover": "ui-state-hover",
 								"ui-droppable-active": "ui-state-default"

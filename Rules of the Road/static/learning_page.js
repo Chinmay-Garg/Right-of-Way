@@ -8,6 +8,7 @@ $(document).ready(function(){
 	}
 
 	else{
+		$('#learnNext').css('margin-left', 0)
 		$("#learnPrevious").hide()
 	}
 

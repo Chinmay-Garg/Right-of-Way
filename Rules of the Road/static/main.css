@@ -112,12 +112,14 @@ button{
     padding-right: 10px;
 }
 
-#learnNext{
-    margin-left: 50px;
-    background-color: #1e5799;
-    color: white;
-}
+/* #learnNext{
+    margin-left: 50px; */
+    /* background-color: #1e5799;
+    color: white; */
+/* } */
 
+.modal-body {
+}
 .quizStart{
     font-size: 36px;
     text-align: center;
