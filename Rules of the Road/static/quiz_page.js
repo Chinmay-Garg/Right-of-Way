@@ -14,6 +14,7 @@ $(document).ready(function(){
 
 	if(currentIdx <= 5){
 		$("#testNext").show()
+		buildTerrain(question.terrain, question.cars_from, question.cars_to)
 	}
 
 	else{
@@ -32,7 +33,7 @@ $(document).ready(function(){
 		}
 
 	})
-	buildTerrain(question.terrain, question.cars_from, question.cars_to)
+	
 
 	$("#testNext").click(function(){
 		console.log("clicked next")
@@ -53,6 +54,7 @@ $(document).ready(function(){
 		}
 
 	})
+
 })
 
 function buildTerrain(terrain, cars_from, cars_to) {
@@ -73,6 +75,7 @@ function buildTerrain(terrain, cars_from, cars_to) {
 					let y = value[1]
 					if(x == parseInt(r) && y == parseInt(column)) {
 						div.addClass('droppable')
+						// div.addClass('ui-droppable')
 						console.log(div)
 						$('.droppable').droppable({
 							classes: {
