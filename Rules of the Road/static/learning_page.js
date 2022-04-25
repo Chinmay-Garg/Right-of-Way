@@ -1,3 +1,4 @@
+n_questions = 5
 $(document).ready(function(){
 	let url = window.location.href
 	let currentIdx = url.slice(-1)
@@ -12,8 +13,10 @@ $(document).ready(function(){
 		$("#learnPrevious").hide()
 	}
 
-	if(currentIdx <= 5){
+	if(currentIdx <= n_questions){
 		$("#learnNext").show()
+		$('.progress-bar').width(currentIdx*100/n_questions+"%")
+		$('div.progress-bar').text(currentIdx+"/"+n_questions);
 	}
 
 	else{
@@ -37,7 +40,7 @@ $(document).ready(function(){
 		console.log("clicked next")
 
 		if($("#learnNext").show()){
-			if(currentIdx == 5){
+			if(currentIdx == n_questions){
 				let url = "/quiz"
 				location.href = url
 			}

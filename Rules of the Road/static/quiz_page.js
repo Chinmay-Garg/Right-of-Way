@@ -99,7 +99,7 @@ function buildTerrain(terrain, cars_from, cars_to) {
 					let car = $('<div class="block car">')
 					car.attr('id', key)
 					let arrow = $('<img class="arrow-image" src="/static/right-traffic-arrow-hi.png">')
-					// car.append(arrow)
+					car.append(arrow)
 					div.append(car)
 				}
 			}
