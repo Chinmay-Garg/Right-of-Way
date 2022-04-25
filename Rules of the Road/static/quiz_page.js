@@ -77,13 +77,7 @@ function buildTerrain(terrain, cars_from, cars_to) {
 						div.addClass('droppable')
 						// div.addClass('ui-droppable')
 						console.log(div)
-						$('.droppable').droppable({
-							classes: {
-								"ui-droppable-hover": "ui-state-hover",
-								"ui-droppable-active": "ui-state-default"
-							  },
-							accept: "#"+key
-						})
+						// Insert droppable here
 					}
 				}
 			}
@@ -102,8 +96,20 @@ function buildTerrain(terrain, cars_from, cars_to) {
 		}
 		$('.terrain').append(row)
 	}
+	$('.droppable').droppable({
+		classes: {
+			"ui-droppable-hover": "ui-state-hover",
+			"ui-droppable-active": "ui-state-default"
+		  },
+		// accept: "#"+key
+		drop: function( event, ui ) {
+			// $( this )
+			console.log($( this ))
+		  }
+	})
 	$(".car").draggable({
 		revert: "invalid",
-		stack: ".draggable"
+		stack: ".draggable",
+		snap: ".block"
 	});
 }
