@@ -3,18 +3,12 @@
 {% block content %}
 	<script type="text/javascript" src="{{ url_for('static', filename = 'learning_page.js') }}"></script>
 	
-	<script>
-        
-    </script>
-
-		<br><br>
-		<div class="container">
-            <br><br>
+		<div class="container mt-4">
             <div class="quizStart">
                 Ready to start the quiz?
             </div>
+            <img class="center mt-4" src="http://driving-tests.org/wp-content/uploads/2018/06/driving_rules1.png" alt="'Rules of the road">
             <br><br>
-            <button id="startQuizButton" class="quizStart btn btn-primary">Click here to begin!</button>
-			
+            <button href="#" id="startQuizButton" class="btn btn-primary btn-lg active quizStart" role="button" aria-pressed="true">Click here to begin!</button>			
 		</div>
 {% endblock %}

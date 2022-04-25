@@ -133,8 +133,8 @@ button{
 #startQuizButton{
     display: flex;
     margin: auto;
-    background-color: #1e5799;
-    color: white;
+    /* background-color: #1e5799;
+    color: white; */
 
 }
 
