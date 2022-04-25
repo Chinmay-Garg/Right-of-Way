@@ -127,6 +127,6 @@ function buildTerrain(terrain, cars_from, cars_to) {
 		revert: "invalid",
 		stack: ".draggable",
 		snap: ".block",
-		cursor: "move"
+		cursor: "move",
 	});
 }
