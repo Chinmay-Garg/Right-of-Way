@@ -190,6 +190,18 @@ button{
     position: relative;
 }
 
+#A {
+    background-color: blue;
+}
+
+#B {
+    background-color: yellow;
+}
+
+#C {
+    background-color: red;
+}
+
 .terrain .car .arrow-image {
     width: 50px;
     height: 50px;

@@ -1,4 +1,4 @@
-
+n_questions = 6
 $(document).ready(function(){
 	let url = window.location.href
 	let currentIdx = url.slice(-1)
@@ -12,8 +12,10 @@ $(document).ready(function(){
 		$("#testPrevious").hide()
 	}
 
-	if(currentIdx <= 5){
+	if(currentIdx <= n_questions){
 		$("#testNext").show()
+		$('.progress-bar').width(currentIdx*100/n_questions+"%")
+		$('div.progress-bar').text(currentIdx+"/"+n_questions);
 		buildTerrain(question.terrain, question.cars_from, question.cars_to)
 	}
 
@@ -39,7 +41,7 @@ $(document).ready(function(){
 		console.log("clicked next")
 
 		if($("#testNext").show()){
-			if(currentIdx == 5){
+			if(currentIdx == n_questions){
 				let url = "/quiz/end"
 				location.href = url
 			}
@@ -75,6 +77,7 @@ function buildTerrain(terrain, cars_from, cars_to) {
 					let y = value[1]
 					if(x == parseInt(r) && y == parseInt(column)) {
 						div.addClass('droppable')
+						div.attr('id', key);
 						// div.addClass('ui-droppable')
 						console.log(div)
 						// Insert droppable here
