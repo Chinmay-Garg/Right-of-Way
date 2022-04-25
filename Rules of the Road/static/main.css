@@ -30,6 +30,12 @@ a {
     font-size: 36px;
 } */
 
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
 .header {
     font-weight: bold;
     align-items: center;
