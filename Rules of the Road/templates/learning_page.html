@@ -35,12 +35,23 @@
 					<source src={{ url_for('static', filename=topic.video) }} type="video/mp4">
 					Your browser does not support the video tag.
 				  </video>
+				  <div class="text-muted"> Video from: {{topic.source}} </div> 
 			</div>
-
 		</div>
 	</div>
 
-	<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	<div class="h5 mt-4"> Summary </div>
+
+	<div class="row mt-4">
+		<div class="col-md-5">
+			<image src={{topic.image}} class="img-responsive d-block mx-auto"></image>
+		</div>
+		<div class="col-md-5">
+			<div>{{topic.summary}}</div>
+		</div>
+	</div>
+
+	<!-- <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-md">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -50,23 +61,19 @@
 				</button>
 				</div>
 				<div class="modal-body">
-				<div class="col-md-12">
-					<image src={{topic.image}} class="img-responsive d-block mx-auto"></image>
-					<br><br>
-					<div>{{topic.summary}}</div>
-				</div>
+				
 				</div>
 				<div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	
 
 	<div class="text-center mt-3 pb-4 action-buttons">
 		<button id="learnPrevious" class="btn btn-secondary">Previous</button>
-		<button id="summary" data-toggle="modal" data-target=".bd-example-modal-lg" class="btn btn-info">Summary</button>
+		<!-- <button id="summary" data-toggle="modal" data-target=".bd-example-modal-lg" class="btn btn-info">Summary</button> -->
 		<button id="learnNext" class="btn btn-primary">Next</button>
 	</div>
 

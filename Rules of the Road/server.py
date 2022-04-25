@@ -10,6 +10,7 @@ topics = {
 		"title": "Overview: What is right of way?",
 		"image": "https://amaabcaprod.azureedge.net/content/images/articles/right-of-way-intersection_example_4.jpg",
 		"video": "learning1.mp4",
+		"source": "https://www.youtube.com/embed/U3NAK7lKaws?start=13&end=57",
 		"summary": "When driving, the rules of the road that establish who has the right to go first is called right of way. " +
 		"As a driver, right of way should be given based on the right-of-way rules in the various scenarios we will cover."
 	},
@@ -17,6 +18,7 @@ topics = {
 		"title": "Controlled Intersections: FIFO",
 		"image": "https://static.epermittest.com/media/filer_public_thumbnails/filer_public/a7/c7/a7c7623e-b7ba-46b8-a2bd-146572859e97/right-of-way-at-intersections.jpg__1920x0_q100_subsampling-2_upscale.jpg",
 		"video": "learning2.mp4",
+		"source": "https://www.youtube.com/embed/VWXgqPzADGQ?start=18&end=43",
 		"summary": "A controlled intersection a point where multiple roads cross over, and it being controlled means it has signs, traffic lights, and/or road signs to guide drivers. " +
 		"A tool to manage who goes first is FIFO, or first in, first out, meaning the driver that stops at the intersection first has the right of way." 
 	},
@@ -24,12 +26,14 @@ topics = {
 		"title": "Controlled Intersections: Rightmost side",
 		"image": "https://static.epermittest.com/media/filer_public_thumbnails/filer_public/a7/c7/a7c7623e-b7ba-46b8-a2bd-146572859e97/right-of-way-at-intersections.jpg__1920x0_q100_subsampling-2_upscale.jpg",
 		"video": "learning3.mp4",
+		"source": "https://www.youtube.com/embed/VWXgqPzADGQ?start=43&end=92",
 		"summary": "In the case where multiple cars get to the intersection at the same time, he driver on the rightmost side should go first. If there are four cars in the intersection, whoever slowly advances first should go. "
 	},
 	"4": {
 		"title": "Uncontrolled Intersections: Pedestrians",
 		"image": "https://1.bp.blogspot.com/-2HZxRE3jUcM/X3hNmgE0S9I/AAAAAAAAA_8/m_qWBreBUnswSgBe011H9bWdoLHvSum6QCLcBGAsYHQ/w1200-h630-p-k-no-nu/two-cars-uncontrolled-intersection.jpg",
 		"video": "learning4.mp4",
+		"source": "https://www.youtube.com/embed/zbc-SVuHTKo?start=60&end=81",
 		"summary": "An uncontrolled intersection has no stop signs or traffic lights. This makes yielding to right of way extra important. " +
 		"The right of way should always be given to pedestrians." 
 	},
@@ -37,6 +41,7 @@ topics = {
 		"title": "Emergency Vehicles",
 		"image": "https://www.fountainvalley.org/ImageRepository/Document?documentID=10622",
 		"video": "learning5.mp4",
+		"source": "https://www.youtube.com/embed/8MpfC3mIvhs?start=36&end=83",
 		"summary": "In the case of an emergency vehicle passing, it is important to allow them the right of way and give them ample space soon as possible in a safe manner. " +
 		"The rule of thumb is to move to the closet lane, moving to the right side if you are in the center lane."
 	},
@@ -44,6 +49,7 @@ topics = {
 		"title": "Multi-lane Roundabouts",
 		"image": "https://driving-test-success.com/roundabouts/roundabout-image.jpg",
 		"video": "learning6.mp4",
+		"source": "https://www.youtube.com/embed/CEhNboz5GPk?start=197&end=238",
 		"summary": "Multi-lane roundabouts are designed to slow traffic and minimize accidents. However, they can be confusing, even for an experienced driver. " +
 		"The key is to stop, know which lane you are taking, and yield until all lanes of traffic are free, and then proceed slowly." 
 	}
