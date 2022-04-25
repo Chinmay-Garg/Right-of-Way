@@ -1,5 +1,5 @@
-n_questions = 6
-n_correct = 0
+let n_questions = 6
+let n_correct = 0
 $(document).ready(function(){
 	let url = window.location.href
 	let currentIdx = url.slice(-1)
@@ -59,7 +59,10 @@ $(document).ready(function(){
 	})
 
 	if (currentIdx == "d") {
+		n_correct = parseInt(sessionStorage.getItem("n_correct"))
 		$('#score-div').text("You got " + n_correct + " out of " + n_questions + " correct!")
+		sessionStorage.setItem("n_correct",0);
+
 	}
 
 })
@@ -96,7 +99,7 @@ function buildTerrain(terrain, cars_from, cars_to) {
 					let car = $('<div class="block car">')
 					car.attr('id', key)
 					let arrow = $('<img class="arrow-image" src="/static/right-traffic-arrow-hi.png">')
-					car.append(arrow)
+					// car.append(arrow)
 					div.append(car)
 				}
 			}
@@ -107,17 +110,23 @@ function buildTerrain(terrain, cars_from, cars_to) {
 	$('.droppable').droppable({
 		classes: {
 			"ui-droppable-hover": "ui-state-hover",
-			"ui-droppable-active": "ui-state-default"
+			"ui-droppable-active": "ui-state-default",
 		  },
 		// accept: "#"+key
 		drop: function( event, ui ) {
-			// $( this )
-			console.log($( this ))
+			if (question.answer[0] == ui.draggable.attr("id") && ui.draggable.attr("id") == $(this).attr("id")) {
+				n_correct = parseInt(sessionStorage.getItem("n_correct"))
+				n_correct = n_correct + 1
+				sessionStorage.setItem("n_correct",n_correct);
+				console.log("correct: " + n_correct)
+			}
+			$(".car").draggable({ disabled: true });
 		  }
 	})
 	$(".car").draggable({
 		revert: "invalid",
 		stack: ".draggable",
-		snap: ".block"
+		snap: ".block",
+		cursor: "move"
 	});
 }

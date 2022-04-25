@@ -50,7 +50,7 @@ topics = {
 }
 questions = {
 	"1": {
-		"prompt": "Which car should go first?",
+		"prompt": "Which car should go first at this intersection if they both arrived at the same time?",
 		"terrain": 	   [[0, 0, 0, 0, 1, 1, 0, 0, 0, 0], #7 0
 						[0, 0, 0, 0, 1, 1, 0, 0, 0, 0], #6 1
 						[0, 0, 0, 0, 1, 1, 0, 0, 0, 0], #5 2
@@ -65,7 +65,7 @@ questions = {
 		"answer": ["B"]
 	},
 	"2": {
-		"prompt": "Which car should go first?",
+		"prompt": "Which car should go first at this intersection if they both arrived at the same time?",
 		"terrain": 		[[0, 0, 0, 0, 1, 1, 0, 0, 0, 0], #7
 						[0, 0, 0, 0, 1, 1, 0, 0, 0, 0], #6
 						[0, 0, 0, 0, 1, 1, 0, 0, 0, 0], #5
@@ -80,7 +80,7 @@ questions = {
 		"answer": ["B"]
 	},
 	"3": {
-		"prompt": "Which car should go first?",
+		"prompt": "Which car should go first at this intersection if they both arrived at the same time?",
 		"terrain": [[0, 0, 0, 0, 1, 1, 0, 0, 0, 0], #7
 						[0, 0, 0, 0, 1, 1, 0, 0, 0, 0], #6
 						[0, 0, 0, 0, 1, 1, 0, 0, 0, 0], #5
@@ -95,7 +95,7 @@ questions = {
 		"answer": ["A"]
 	},
 	"4": {
-		"prompt": "Which car should go first?",
+		"prompt": "Which car has the right-of-way if the road towards the top is ending?",
 		"terrain": [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], #7
 						[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], #6
 						[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], #5
@@ -110,7 +110,7 @@ questions = {
 		"answer": ["B"]
 	},
 	"5": {
-		"prompt": "Which way should car A yield?",
+		"prompt": "Which way should car A yield if an emergency vehicle (with active sirens) is behind it?",
 		"terrain": [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], #7
 						[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], #6
 						[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], #5
@@ -125,7 +125,7 @@ questions = {
 		"answer": ["Right"]
 	},
 	"6": {
-		"prompt": "Which car should go first?",
+		"prompt": "Which car should go first at this intersection if they both arrived at the same time?",
 		"terrain": 		[[0, 0, 0, 0, 1, 1, 0, 0, 0, 0], #7
 						[0, 0, 0, 0, 1, 1, 0, 0, 0, 0], #6
 						[0, 0, 0, 0, 1, 1, 0, 0, 0, 0], #5

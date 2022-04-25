@@ -188,6 +188,8 @@ button{
     background-color: yellow;
     z-index: 2;
     position: relative;
+    cursor: -webkit-grab; 
+    cursor: grab;
 }
 
 #A {
