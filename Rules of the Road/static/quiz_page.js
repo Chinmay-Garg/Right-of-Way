@@ -1,4 +1,5 @@
 n_questions = 6
+n_correct = 0
 $(document).ready(function(){
 	let url = window.location.href
 	let currentIdx = url.slice(-1)
@@ -56,6 +57,10 @@ $(document).ready(function(){
 		}
 
 	})
+
+	if (currentIdx == "d") {
+		$('#score-div').text("You got " + n_correct + " out of " + n_questions + " correct!")
+	}
 
 })
 
