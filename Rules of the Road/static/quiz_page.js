@@ -123,17 +123,27 @@ function buildTerrain(terrain, cars_from, cars_to) {
 		  },
 		// accept: "#"+key
 		drop: function( event, ui ) {
+			// Correct answer
 			if (question.answer[0] == ui.draggable.attr("id") && ui.draggable.attr("id") == $(this).attr("id")) {
 				n_correct = parseInt(sessionStorage.getItem("n_correct"))
 				n_correct = n_correct + 1
 				sessionStorage.setItem("n_correct",n_correct);
 				console.log("correct: " + n_correct)
+
+				$('div.quiz-feedback').text("Correct");
+				$('div.quiz-feedback').addClass('success');
+			} else {
+				// Incorrect answer
+				$('div.quiz-feedback').text("Incorrect");
+				$('div.quiz-feedback').addClass('warning');
 			}
 			$(".car").draggable({ 
 				disabled: true,
 				classes: {
 					"ui-draggable": ""
 				} });
+
+			document.getElementById('testNext').disabled = false;
 		  }
 	})
 	
