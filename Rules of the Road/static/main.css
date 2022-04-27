@@ -186,12 +186,14 @@ button{
 }
 
 .terrain .droppable {
-    background-color: yellow;
-    opacity: 0.2;
+    background-color: gray !important;
+    outline-style: solid;
+    position: relative; 
+    /* opacity: 0.2; */
 }
 
 .terrain .car {
-    background-color: yellow;
+    background-color: gray;
     z-index: 2;
     position: relative;
 }
@@ -203,14 +205,17 @@ button{
 
 #A {
     background-color: blue;
+    outline-color: blue;
 }
 
 #B {
     background-color: yellow;
+    outline-color: yellow;
 }
 
 #C {
     background-color: red;
+    outline-color: red;
 }
 
 .terrain .car .arrow-image {
