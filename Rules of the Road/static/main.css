@@ -188,6 +188,9 @@ button{
     background-color: yellow;
     z-index: 2;
     position: relative;
+}
+
+.terrain .mouse-hover {
     cursor: -webkit-grab; 
     cursor: grab;
 }

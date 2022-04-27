@@ -107,6 +107,15 @@ function buildTerrain(terrain, cars_from, cars_to) {
 		}
 		$('.terrain').append(row)
 	}
+	$(".car").draggable({
+		revert: "invalid",
+		stack: ".draggable",
+		snap: ".block",
+		cursor: "move",
+		classes: {
+			"ui-draggable": "mouse-hover"
+		}
+	});
 	$('.droppable').droppable({
 		classes: {
 			"ui-droppable-hover": "ui-state-hover",
@@ -120,13 +129,12 @@ function buildTerrain(terrain, cars_from, cars_to) {
 				sessionStorage.setItem("n_correct",n_correct);
 				console.log("correct: " + n_correct)
 			}
-			$(".car").draggable({ disabled: true });
+			$(".car").draggable({ 
+				disabled: true,
+				classes: {
+					"ui-draggable": ""
+				} });
 		  }
 	})
-	$(".car").draggable({
-		revert: "invalid",
-		stack: ".draggable",
-		snap: ".block",
-		cursor: "move",
-	});
+	
 }
