@@ -15,9 +15,10 @@ $(document).ready(function(){
 
 	if(currentIdx <= n_questions){
 		$("#testNext").show()
+
 		$('.progress-bar').width(currentIdx*100/n_questions+"%")
 		$('div.progress-bar').text(currentIdx+"/"+n_questions);
-		buildTerrain(question.terrain, question.cars_from, question.cars_to)
+		buildTerrain(question.terrain, question.cars_from, question.cars_to, question.horizontal_lane, question.vertical_lane)
 	}
 
 	else{
@@ -67,7 +68,7 @@ $(document).ready(function(){
 
 })
 
-function buildTerrain(terrain, cars_from, cars_to) {
+function buildTerrain(terrain, cars_from, cars_to, horizontalLane, verticalLane) {
 	// console.log(cars_from)
 	
 	for(var r in terrain) {
@@ -80,6 +81,24 @@ function buildTerrain(terrain, cars_from, cars_to) {
 				div = $('<div class="block grass">')
 			} else if (j == "1") {
 				div = $(`<div data-x="${r}" data-y="${column}" class="block road">`)
+				if(horizontalLane != undefined || horizontalLane != null) {
+					if((r.toString()+column.toString()) in horizontalLane) {
+						div.css('background-image', 'linear-gradient(to right, white 33%, rgba(255,255,255,0) 0%)')
+						div.css('background-position', 'bottom')
+						div.css('background-size', '2rem 5px')
+						div.css('background-repeat', 'repeat-x')
+					}
+				}
+
+				if(verticalLane != undefined || verticalLane != null) {
+					if((r.toString()+column.toString()) in verticalLane) {
+						div.css('background-image', 'linear-gradient(white 33%, rgba(255,255,255,0) 0%)')
+						div.css('background-position', 'right')
+						div.css('background-size', '5px 2rem')
+						div.css('background-repeat', 'repeat-y')
+					}
+				}
+
 				for(let [key, value] of Object.entries(cars_to)) {
 					let x = value[0]
 					let y = value[1]
@@ -95,11 +114,33 @@ function buildTerrain(terrain, cars_from, cars_to) {
 			for(let [key, value] of Object.entries(cars_from)) {
 				let x = value[0]
 				let y = value[1]
+				let vehicle = value[2]
+				let dir = value[3]
+
 				if(x == parseInt(r) && y == parseInt(column)) {
 					let car = $('<div class="block car">')
+					let car_img = $('<img class="w-100" src="/static/car.png">')
 					car.attr('id', key)
-					let arrow = $('<img class="arrow-image" src="/static/right-traffic-arrow-hi.png">')
-					car.append(arrow)
+					if(dir == "N") {
+						car.css(
+							'transform',
+							'rotate(90deg)'
+						)
+					} else if (dir == "S") {
+						car.css(
+							'transform',
+							'rotate(-90deg)'
+						)
+					} else if (dir == "E") {
+						car.css(
+							'transform',
+							'rotate(180deg)'
+						)
+					}
+					// let arrow = $('<img class="arrow-image" src="/static/right-traffic-arrow-hi.png">')
+
+					// car.append(arrow)
+					car.append(car_img)
 					div.append(car)
 				}
 			}
