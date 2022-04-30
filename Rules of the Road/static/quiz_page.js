@@ -121,9 +121,14 @@ function buildTerrain(terrain, cars_from, cars_to, horizontalLane, verticalLane)
 				if(x == parseInt(r) && y == parseInt(column)) {
 					let car = $('<div class="block car">')
 					let car_img;
-					if(vehicle == "Car") car_img = $('<img class="w-100 h-100" src="/static/car_north.png">')					
-					else if (vehicle == "Ambulance") car_img = $('<img class="w-100 h-100" src="/static/ambulance_north.png">')	
-					car.attr('id', key)
+					if(vehicle == "Car") {
+						car_img = $('<img class="w-100 h-100" src="/static/car_north.png">')					
+						car.attr('id', key)
+					}
+					else if (vehicle == "Ambulance") {
+						car_img = $('<img class="w-100 h-100" src="/static/ambulance_north.png">')	
+						car.addClass('not-draggable')
+					}
 					if(dir == "E") {
 						car.css(
 							'transform',
@@ -153,7 +158,7 @@ function buildTerrain(terrain, cars_from, cars_to, horizontalLane, verticalLane)
 		}
 		$('.terrain').append(row)
 	}
-	$(".car").draggable({
+	$(".car:not(.not-draggable)").draggable({
 		revert: "invalid",
 		stack: ".draggable",
 		snap: ".block",

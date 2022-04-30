@@ -234,6 +234,14 @@ button{
     outline-color: blue;
 }
 
+#A1 {
+    background-color: blue;
+}
+
+#A1::before {
+    outline-color: blue;
+}
+
 #B {
     background-color: yellow;
 }
