@@ -116,12 +116,15 @@ function buildTerrain(terrain, cars_from, cars_to, horizontalLane, verticalLane)
 				let y = value[1]
 				let vehicle = value[2]
 				let dir = value[3]
+				let arrow_dir = value[4]
 
 				if(x == parseInt(r) && y == parseInt(column)) {
 					let car = $('<div class="block car">')
-					let car_img = $('<img class="w-100" src="/static/car.png">')
+					let car_img;
+					if(vehicle == "Car") car_img = $('<img class="w-100 h-100" src="/static/car_north.png">')					
+					else if (vehicle == "Ambulance") car_img = $('<img class="w-100 h-100" src="/static/ambulance_north.png">')	
 					car.attr('id', key)
-					if(dir == "N") {
+					if(dir == "E") {
 						car.css(
 							'transform',
 							'rotate(90deg)'
@@ -129,16 +132,18 @@ function buildTerrain(terrain, cars_from, cars_to, horizontalLane, verticalLane)
 					} else if (dir == "S") {
 						car.css(
 							'transform',
-							'rotate(-90deg)'
-						)
-					} else if (dir == "E") {
-						car.css(
-							'transform',
 							'rotate(180deg)'
 						)
+					} else if (dir == "W") {
+						car.css(
+							'transform',
+							'rotate(-90deg)'
+						)
 					}
+					let car_arrow = $('<div class="car-arrow">')
+					car_arrow.html(arrow_dir)
+					car.append(car_arrow)
 					// let arrow = $('<img class="arrow-image" src="/static/right-traffic-arrow-hi.png">')
-
 					// car.append(arrow)
 					car.append(car_img)
 					div.append(car)
