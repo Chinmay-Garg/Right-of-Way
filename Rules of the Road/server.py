@@ -43,7 +43,7 @@ topics = {
 		"video": "learning5.mp4",
 		"source": "https://www.youtube.com/embed/8MpfC3mIvhs?start=36&end=83",
 		"summary": "In the case of an emergency vehicle passing, it is important to allow them the right of way and give them ample space soon as possible in a safe manner. " +
-		"The rule of thumb is to move to the closet lane, moving to the right side if you are in the center lane."
+		"The rule of thumb is to move to the closest lane, moving to the right side if you are in the center lane."
 	},
 	"6": {
 		"title": "Multi-lane Roundabouts",
@@ -70,6 +70,13 @@ questions = {
 		"cars_to": {"A": [2, 5, "Car", "N"], "B":[3, 3, "Car", "W"]},
 		"horizontal_lane": {"30": 0, "31": 0, "32": 0, "33": 0, "36": 0, "37": 0, "38": 0, "39": 0},
 		"vertical_lane": {"04": 0, "14": 0, "24": 0, "54": 0, "64": 0, "74": 0},
+		"hint": {
+			"title": "Controlled Intersections: Rightmost side",
+			"image": "https://static.epermittest.com/media/filer_public_thumbnails/filer_public/a7/c7/a7c7623e-b7ba-46b8-a2bd-146572859e97/right-of-way-at-intersections.jpg__1920x0_q100_subsampling-2_upscale.jpg",
+			"video": "learning3.mp4",
+			"source": "https://www.youtube.com/embed/VWXgqPzADGQ?start=43&end=92",
+			"summary": "In the case where multiple cars get to the intersection at the same time, he driver on the rightmost side should go first. If there are four cars in the intersection, whoever slowly advances first should go. "
+	},
 		"answer": ["B"]
 	},
 	"2": {
@@ -87,6 +94,13 @@ questions = {
 		"cars_to": {"A": [1,5, "Car", "N"], "B":[2, 5,  "Car", "N"]},
 		"horizontal_lane": {"30": 0, "31": 0, "32": 0, "33": 0, "36": 0, "37": 0, "38": 0, "39": 0},
 		"vertical_lane": {"04": 0, "14": 0, "24": 0, "54": 0, "64": 0, "74": 0},
+		"hint": {
+			"title": "Controlled Intersections: Rightmost side",
+			"image": "https://static.epermittest.com/media/filer_public_thumbnails/filer_public/a7/c7/a7c7623e-b7ba-46b8-a2bd-146572859e97/right-of-way-at-intersections.jpg__1920x0_q100_subsampling-2_upscale.jpg",
+			"video": "learning3.mp4",
+			"source": "https://www.youtube.com/embed/VWXgqPzADGQ?start=43&end=92",
+			"summary": "In the case where multiple cars get to the intersection at the same time, he driver on the rightmost side should go first. If there are four cars in the intersection, whoever slowly advances first should go. "
+	},
 		"answer": ["B"]
 	},
 	"3": {
@@ -104,6 +118,13 @@ questions = {
 		"cars_to": {"A": [4, 6, "Car", "E"], "B":[5, 4,  "Car", "S"]},
 		"horizontal_lane": {"30": 0, "31": 0, "32": 0, "33": 0, "36": 0, "37": 0, "38": 0, "39": 0},
 		"vertical_lane": {"04": 0, "14": 0, "24": 0, "54": 0, "64": 0, "74": 0},
+		"hint": {
+			"title": "Controlled Intersections: Rightmost side",
+			"image": "https://static.epermittest.com/media/filer_public_thumbnails/filer_public/a7/c7/a7c7623e-b7ba-46b8-a2bd-146572859e97/right-of-way-at-intersections.jpg__1920x0_q100_subsampling-2_upscale.jpg",
+			"video": "learning3.mp4",
+			"source": "https://www.youtube.com/embed/VWXgqPzADGQ?start=43&end=92",
+			"summary": "In the case where multiple cars get to the intersection at the same time, he driver on the rightmost side should go first. If there are four cars in the intersection, whoever slowly advances first should go. "
+	},
 		"answer": ["A"]
 	},
 	"4": {
@@ -120,6 +141,13 @@ questions = {
 		"cars_from": {"A": [4, 4, "Car", "E", "\u2191"], "B":[3, 5, "Car", "E", "\u2197"]},
 		"cars_to": {"A": [4, 7, "Car", "E"], "B":[4, 8,  "Car", "E"]},
 		"horizontal_lane": {"30": 0, "31": 0, "32": 0, "33": 0, "34": 0, "35": 0, "36": 0, "37": 0, "38": 0, "39": 0},
+		"hint": {
+			"title": "Controlled Intersections: Rightmost side",
+			"image": "https://static.epermittest.com/media/filer_public_thumbnails/filer_public/a7/c7/a7c7623e-b7ba-46b8-a2bd-146572859e97/right-of-way-at-intersections.jpg__1920x0_q100_subsampling-2_upscale.jpg",
+			"video": "learning3.mp4",
+			"source": "https://www.youtube.com/embed/VWXgqPzADGQ?start=43&end=92",
+			"summary": "In the case where multiple cars get to the intersection at the same time, he driver on the rightmost side should go first. If there are four cars in the intersection, whoever slowly advances first should go. "
+	},
 		"answer": ["B"]
 	},
 	"5": {
@@ -140,6 +168,14 @@ questions = {
 			"30": 0, "31": 0, "32": 0, "33": 0, "34": 0, "35": 0, "36": 0, "36": 0, "37": 0, "38": 0, "39": 0,
 			"40": 0, "41": 0, "42": 0, "43": 0, "44": 0, "45": 0, "46": 0, "47": 0, "48": 0, "49": 0
 		},
+		"hint": {
+			"title": "Emergency Vehicles",
+			"image": "https://www.fountainvalley.org/ImageRepository/Document?documentID=10622",
+			"video": "learning5.mp4",
+			"source": "https://www.youtube.com/embed/8MpfC3mIvhs?start=36&end=83",
+			"summary": "In the case of an emergency vehicle passing, it is important to allow them the right of way and give them ample space soon as possible in a safe manner. " +
+			"The rule of thumb is to move to the closest lane, moving to the right side if you are in the center lane."
+		},
 		"answer": ["A"]
 	},
 	"6": {
@@ -157,6 +193,13 @@ questions = {
 		"cars_to": {"A": [5,4, "Car", "S"], "B":[3, 3, "Car", "N"], "C":[2, 5,  "Car", "E"]},
 		"horizontal_lane": {"30": 0, "31": 0, "32": 0, "33": 0, "36": 0, "37": 0, "38": 0, "39": 0},
 		"vertical_lane": {"04": 0, "14": 0, "24": 0, "54": 0, "64": 0, "74": 0},
+		"hint": {
+			"title": "Controlled Intersections: Rightmost side",
+			"image": "https://static.epermittest.com/media/filer_public_thumbnails/filer_public/a7/c7/a7c7623e-b7ba-46b8-a2bd-146572859e97/right-of-way-at-intersections.jpg__1920x0_q100_subsampling-2_upscale.jpg",
+			"video": "learning3.mp4",
+			"source": "https://www.youtube.com/embed/VWXgqPzADGQ?start=43&end=92",
+			"summary": "In the case where multiple cars get to the intersection at the same time, he driver on the rightmost side should go first. If there are four cars in the intersection, whoever slowly advances first should go. "
+	},
 		"answer": ["C", "A", "B"]
 	}
 }
