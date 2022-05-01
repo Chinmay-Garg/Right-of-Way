@@ -5,11 +5,11 @@ img {
 }
 
 body {
-    background-color: #EEF6FD;
+    background-color: #b6d6f2;
 }
 
 a {
-    color: #11A3D0;
+    color: #105eb1;
 }
 
 .center {
@@ -178,18 +178,18 @@ button{
 }
 
 .terrain .grass {
-    background-color: green;
+    background-color: #7cbf65;
 }
 
 .terrain .road {
-    background-color: gray;
+    background-color: #686868;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .terrain .droppable {
-    background-color: gray !important;
+    background-color: #686868 !important;
     position: relative; 
     /* opacity: 0.2; */
     display: flex;
@@ -264,4 +264,27 @@ button{
     height: 20px;
     font-size: 2rem;
     transform: translateX(-50%);
+}
+
+.btn-primary {
+    background-color: #105eb1;
+    border-color: #105eb1;
+}
+
+.btn-primary:disabled {
+    background-color: #105eb1;
+    border-color: #105eb1;
+}
+
+.progress-bar {
+    background-color: #105eb1;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active {
+    background-color: #105eb1;
+    border-color: #105eb1;
+}
+
+.navbar-gray {
+    background-color: #e2e4e7; !important
 }
