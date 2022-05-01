@@ -80,7 +80,7 @@ questions = {
 		"answer": ["B"]
 	},
 	"2": {
-		"prompt": "Which car should go first at this intersection if they both arrived at the same time?",
+		"prompt": "Which car should go first at this intersection if the car in the blue box arrived first?",
 		"terrain": 		[[0, 0, 0, 0, 1, 1, 0, 0, 0, 0], #7
 						[0, 0, 0, 0, 1, 1, 0, 0, 0, 0], #6
 						[0, 0, 0, 0, 1, 1, 0, 0, 0, 0], #5
@@ -90,18 +90,19 @@ questions = {
 						[0, 0, 0, 0, 1, 1, 0, 0, 0, 0], #1
 						[0, 0, 0, 0, 1, 1, 0, 0, 0, 0]],#0
 						#0, 1, 2, 3, 4, 5, 6, 7, 8, 9
-		"cars_from": {"A": [5, 5, "Car", "N", "\u2191"], "B":[3, 6, "Car", "W", "\u21b1"]},
-		"cars_to": {"A": [1,5, "Car", "N"], "B":[2, 5,  "Car", "N"]},
+		"cars_from": {"A": [5, 5, "Car", "N", "\u2191"], "B":[3, 6, "Car", "W", "\u2191"]},
+		"cars_to": {"A": [2,5, "Car", "N"], "B":[3, 3,  "Car", "N"]},
 		"horizontal_lane": {"30": 0, "31": 0, "32": 0, "33": 0, "36": 0, "37": 0, "38": 0, "39": 0},
 		"vertical_lane": {"04": 0, "14": 0, "24": 0, "54": 0, "64": 0, "74": 0},
 		"hint": {
-			"title": "Controlled Intersections: Rightmost side",
+			"title": "Controlled Intersections: FIFO",
 			"image": "https://static.epermittest.com/media/filer_public_thumbnails/filer_public/a7/c7/a7c7623e-b7ba-46b8-a2bd-146572859e97/right-of-way-at-intersections.jpg__1920x0_q100_subsampling-2_upscale.jpg",
-			"video": "learning3.mp4",
-			"source": "https://www.youtube.com/embed/VWXgqPzADGQ?start=43&end=92",
-			"summary": "In the case where multiple cars get to the intersection at the same time, he driver on the rightmost side should go first. If there are four cars in the intersection, whoever slowly advances first should go. "
+			"video": "learning2.mp4",
+			"source": "https://www.youtube.com/embed/VWXgqPzADGQ?start=18&end=43",
+			"summary": "A controlled intersection a point where multiple roads cross over, and it being controlled means it has signs, traffic lights, and/or road signs to guide drivers. " +
+			"A tool to manage who goes first is FIFO, or first in, first out, meaning the driver that stops at the intersection first has the right of way."
 	},
-		"answer": ["B"]
+		"answer": ["A"]
 	},
 	"3": {
 		"prompt": "Which car should go first at this intersection if they both arrived at the same time?",
@@ -128,7 +129,7 @@ questions = {
 		"answer": ["A"]
 	},
 	"4": {
-		"prompt": "Which car has the right-of-way if the road towards the top is ending?",
+		"prompt": "Which car has the right-of-way if the road on the top is ending?",
 		"terrain": 	   [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], #7 0
 						[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], #6 1
 						[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], #5 2
@@ -139,14 +140,15 @@ questions = {
 						[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]],#0 7
 						#0, 1, 2, 3, 4, 5, 6, 7, 8, 9
 		"cars_from": {"A": [4, 4, "Car", "E", "\u2191"], "B":[3, 5, "Car", "E", "\u2197"]},
-		"cars_to": {"A": [4, 7, "Car", "E"], "B":[4, 8,  "Car", "E"]},
+		"cars_to": {"A": [4, 6, "Car", "E"], "B":[4, 7,  "Car", "E"]},
 		"horizontal_lane": {"30": 0, "31": 0, "32": 0, "33": 0, "34": 0, "35": 0, "36": 0, "37": 0, "38": 0, "39": 0},
 		"hint": {
-			"title": "Controlled Intersections: Rightmost side",
+			"title": "Controlled Intersections: FIFO",
 			"image": "https://static.epermittest.com/media/filer_public_thumbnails/filer_public/a7/c7/a7c7623e-b7ba-46b8-a2bd-146572859e97/right-of-way-at-intersections.jpg__1920x0_q100_subsampling-2_upscale.jpg",
-			"video": "learning3.mp4",
-			"source": "https://www.youtube.com/embed/VWXgqPzADGQ?start=43&end=92",
-			"summary": "In the case where multiple cars get to the intersection at the same time, he driver on the rightmost side should go first. If there are four cars in the intersection, whoever slowly advances first should go. "
+			"video": "learning2.mp4",
+			"source": "https://www.youtube.com/embed/VWXgqPzADGQ?start=18&end=43",
+			"summary": "A controlled intersection a point where multiple roads cross over, and it being controlled means it has signs, traffic lights, and/or road signs to guide drivers. " +
+			"A tool to manage who goes first is FIFO, or first in, first out, meaning the driver that stops at the intersection first has the right of way."
 	},
 		"answer": ["B"]
 	},
