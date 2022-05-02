@@ -12,6 +12,10 @@ a {
     color: #105eb1;
 }
 
+.boldFont {
+    font-weight: bold;
+}
+
 .center {
     align-items: center;
     text-align: center;
@@ -83,6 +87,7 @@ a {
 .grayFeature {
     background-color: #c9c9c9;
     border-radius: 25px;
+    padding: 10px;
 }
 
 .grayText {
@@ -136,7 +141,7 @@ button{
 .quizStart{
     font-size: 36px;
     text-align: center;
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 #startQuizButton{
