@@ -25,7 +25,7 @@
 		</div>
 	</div>
 
-	<div class="row mx-auto bottomPad grayFeature d-flex justify-content-center">
+	<div class="row mx-auto bottomPad grayFeature shadow d-flex justify-content-center">
 		<div class="col-md-12 pb-4">
 			<div class="videoWrap mt-4">
 				<!-- <iframe src="{{topic.video}}" class="video" title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen>
@@ -37,7 +37,8 @@
 				  <div class="text-muted"> Video from: <a href="{{topic.source}}">{{topic.source}}</a> </div> 
 			</div>
 		</div>
-		<button id="toSummary" class="btn btn-primary mt-4 mb-2">Jump to Summary</button>
+		
+		<button id="toSummary" class="btn btn-primary mt-4 mb-2"><i class="bi bi-arrow-down"></i></button>
 	</div>
 
 
@@ -48,10 +49,10 @@
 
 		<div class="row m-4 d-flex justify-content-center">
 			<div class="col-md-5">
-				<img src={{topic.image}} class="img-responsive d-block mx-auto">
+				<img src={{topic.image}} class="img-responsive d-block mx-auto shadow">
 			</div>
 			<div class="col-md-1"></div>
-			<div class="col-md-5 d-flex align-items-center boldFont sign">
+			<div class="col-md-5 d-flex align-items-center boldFont sign shadow">
 				<div>{{topic.summary}}</div>
 			</div>
 		</div>
