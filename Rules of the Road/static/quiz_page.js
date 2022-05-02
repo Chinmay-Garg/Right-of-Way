@@ -28,7 +28,9 @@ $(document).ready(function(){
 
 	$("#testPrevious").click(function(){
 		console.log("clicked previous")
-
+		n_correct = parseInt(sessionStorage.getItem("n_correct"))
+		n_correct = n_correct - 1
+		sessionStorage.setItem("n_correct",n_correct);
 		if($("#testPrevious").show()){
 			let prevIdx = parseInt(currentIdx) - 1
 			let url = "/quiz/" + prevIdx

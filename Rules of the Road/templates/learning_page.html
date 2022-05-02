@@ -15,39 +15,36 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
 </head>
-<div class="progress mt-4 bottomPad">
+<div class="progress my-4">
 	<div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
-<div class="container d-flex flex-column justify-content-center grayFeature">
+<div class="container d-flex flex-column justify-content-center">
 	<div class="row">
-		<div class="col-md-12 mt-4">
-			<div class="h2 text-center mt-2 boldFont">{{topic.title}}</div>
+		<div class="col-md-12 my-4">
+			<div class="h2 text-center">{{topic.title}}</div>
 		</div>
 	</div>
-	<div class="row">
-		<button id="toSummary" class="btn btn-secondary">Jump to Summary</button>
-	</div>
 
-
-	<div class="row mx-auto bottomPad">
-		<div class="col-md-12">
+	<div class="row mx-auto bottomPad grayFeature d-flex justify-content-center">
+		<div class="col-md-12 pb-4">
 			<div class="videoWrap mt-4">
 				<!-- <iframe src="{{topic.video}}" class="video" title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen>
 				</iframe> -->
-				<video width="1000" controls>
+				<video width="100%" controls>
 					<source src={{ url_for('static', filename=topic.video) }} type="video/mp4">
 					Your browser does not support the video tag.
 				  </video>
 				  <div class="text-muted"> Video from: <a href="{{topic.source}}">{{topic.source}}</a> </div> 
 			</div>
 		</div>
+		<button id="toSummary" class="btn btn-primary mt-4 mb-2">Jump to Summary</button>
 	</div>
 
 
 	<a id="summary">
 
 		<!-- summary section -->
-		<div class="h4 mt-5 d-flex justify-content-center boldFont"> Summary </div>
+		<div class="h4 d-flex justify-content-center boldFont "> Summary </div>
 
 		<div class="row m-4 d-flex justify-content-center">
 			<div class="col-md-5">

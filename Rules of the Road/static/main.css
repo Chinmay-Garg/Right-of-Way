@@ -89,10 +89,9 @@ a {
 }
 
 .grayFeature {
-    background-color: #c9c9c9;
+    background-color: #e1e1e4;
     border-radius: 25px;
     padding: 10px;
-    z-index: -1;
 }
 
 .grayText {
@@ -310,5 +309,5 @@ button{
 }
 
 .navbar-gray {
-    background-color: #e2e4e7; !important
+    background-color: #e2e4e7 !important;
 }
