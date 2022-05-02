@@ -23,6 +23,11 @@ $(document).ready(function(){
 		$("#learnNext").hide()
 	}
 
+	$("#toSummary").click(function(){
+		console.log("to summary clicked")
+
+		location.href = "#summary"
+	})
 
 	$("#learnPrevious").click(function(){
 		console.log("clicked previous")

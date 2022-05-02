@@ -24,6 +24,9 @@
 			<div class="h2 text-center mt-2 boldFont">{{topic.title}}</div>
 		</div>
 	</div>
+	<div class="row">
+		<button id="toSummary" class="btn btn-secondary">Jump to Summary</button>
+	</div>
 
 
 	<div class="row mx-auto bottomPad">
@@ -40,25 +43,34 @@
 		</div>
 	</div>
 
-	<div class="h4 mt-5 d-flex justify-content-center boldFont"> Summary </div>
 
-	<div class="row m-4 d-flex justify-content-center">
-		<div class="col-md-5">
-			<img src={{topic.image}} class="img-responsive d-block mx-auto">
+	<a id="summary">
+
+		<!-- summary section -->
+		<div class="h4 mt-5 d-flex justify-content-center boldFont"> Summary </div>
+
+		<div class="row m-4 d-flex justify-content-center">
+			<div class="col-md-5">
+				<img src={{topic.image}} class="img-responsive d-block mx-auto">
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-5 d-flex align-items-center boldFont sign">
+				<div>{{topic.summary}}</div>
+			</div>
 		</div>
-		<div class="col-md-5 d-flex align-items-center boldFont">
-			<div>{{topic.summary}}</div>
+
+
+		<!-- buttons -->
+		<div class="text-center mt-3 pb-4 action-buttons">
+			<button id="learnPrevious" class="btn btn-secondary">Previous</button>
+			<!-- <button id="summary" data-toggle="modal" data-target=".bd-example-modal-lg" class="btn btn-info">Summary</button> -->
+			<button id="learnNext" class="btn btn-primary">Next</button>
 		</div>
-	</div>
 
-	
+		<!-- <a href="#top" class="top" aria-label="Back to top" title="Back to top">↑</a> -->
 
-	<div class="text-center mt-3 pb-4 action-buttons">
-		<button id="learnPrevious" class="btn btn-secondary">Previous</button>
-		<!-- <button id="summary" data-toggle="modal" data-target=".bd-example-modal-lg" class="btn btn-info">Summary</button> -->
-		<button id="learnNext" class="btn btn-primary">Next</button>
-	</div>
-
+		
+	</a>
 	
 </div>
 {% endblock %}
