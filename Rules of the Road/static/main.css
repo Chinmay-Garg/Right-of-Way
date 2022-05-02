@@ -311,3 +311,9 @@ button{
 .navbar-gray {
     background-color: #e2e4e7 !important;
 }
+
+.bi-chevron-double-down {
+    font-size: 36px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
