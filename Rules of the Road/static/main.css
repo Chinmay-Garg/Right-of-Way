@@ -57,6 +57,10 @@ a {
     font-size: 20px;
 }
 
+.bottomPad {
+    margin-bottom: 30px;
+}
+
 .leftPad {
     padding-left: 15px;
 }
@@ -77,9 +81,8 @@ a {
 }
 
 .grayFeature {
-    background-color: #ECE9E9;
+    background-color: #c9c9c9;
     border-radius: 25px;
-    padding: 5px;
 }
 
 .grayText {
