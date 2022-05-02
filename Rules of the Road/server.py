@@ -27,7 +27,7 @@ topics = {
 		"image": "https://static.epermittest.com/media/filer_public_thumbnails/filer_public/a7/c7/a7c7623e-b7ba-46b8-a2bd-146572859e97/right-of-way-at-intersections.jpg__1920x0_q100_subsampling-2_upscale.jpg",
 		"video": "learning3.mp4",
 		"source": "https://www.youtube.com/embed/VWXgqPzADGQ?start=43&end=92",
-		"summary": "In the case where multiple cars get to the intersection at the same time, he driver on the rightmost side should go first. If there are four cars in the intersection, whoever slowly advances first should go. "
+		"summary": "In the case where multiple cars get to the intersection at the same time, the driver on the rightmost side should go first. If there are four cars in the intersection, whoever slowly advances first should go. "
 	},
 	"4": {
 		"title": "Uncontrolled Intersections: Pedestrians",
@@ -124,7 +124,7 @@ questions = {
 			"image": "https://static.epermittest.com/media/filer_public_thumbnails/filer_public/a7/c7/a7c7623e-b7ba-46b8-a2bd-146572859e97/right-of-way-at-intersections.jpg__1920x0_q100_subsampling-2_upscale.jpg",
 			"video": "learning3.mp4",
 			"source": "https://www.youtube.com/embed/VWXgqPzADGQ?start=43&end=92",
-			"summary": "In the case where multiple cars get to the intersection at the same time, he driver on the rightmost side should go first. If there are four cars in the intersection, whoever slowly advances first should go. "
+			"summary": "In the case where multiple cars get to the intersection at the same time, the driver on the rightmost side should go first. If there are four cars in the intersection, whoever slowly advances first should go. "
 	},
 		"answer": ["A"]
 	},
@@ -200,7 +200,7 @@ questions = {
 			"image": "https://static.epermittest.com/media/filer_public_thumbnails/filer_public/a7/c7/a7c7623e-b7ba-46b8-a2bd-146572859e97/right-of-way-at-intersections.jpg__1920x0_q100_subsampling-2_upscale.jpg",
 			"video": "learning3.mp4",
 			"source": "https://www.youtube.com/embed/VWXgqPzADGQ?start=43&end=92",
-			"summary": "In the case where multiple cars get to the intersection at the same time, he driver on the rightmost side should go first. If there are four cars in the intersection, whoever slowly advances first should go. "
+			"summary": "In the case where multiple cars get to the intersection at the same time, the driver on the rightmost side should go first. If there are four cars in the intersection, whoever slowly advances first should go. "
 	},
 		"answer": ["C", "A", "B"]
 	}

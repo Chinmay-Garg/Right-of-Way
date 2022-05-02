@@ -63,7 +63,7 @@ $(document).ready(function(){
 
 	if (currentIdx == "d") {
 		n_correct = parseInt(sessionStorage.getItem("n_correct"))
-		$('#score-div').text("You got " + n_correct + " out of " + n_questions + " correct!")
+		$('#score-div').text("You got " + n_correct + " out of 6" + " correct!")
 		sessionStorage.setItem("n_correct",0);
 
 	}

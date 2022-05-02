@@ -36,7 +36,7 @@ a {
 
 .centerContainer img {
     opacity: 0.8;
-    max-width: 80%;
+    max-width: 100%;
 }
 
 .centerContainer .btn {
@@ -248,7 +248,7 @@ button{
 }
 
 .terrain .car {
-    background-color: gray;
+    background-color: #686868;
     z-index: 2;
     position: relative;
     width: 90%;
