@@ -2,10 +2,6 @@
 
 {% block content %}
 	<script type="text/javascript" src="{{ url_for('static', filename = 'quiz_page.js') }}"></script>
-	<script type="text/javascript" src="{{ url_for('static', filename = 'learning_page.js') }}"></script>
-	<script>
-        let questions = {{questions|tojson}} 
-    </script>
 
 		<div class="container my-4">
 			<!-- {{questions.answer}} -->
@@ -14,13 +10,13 @@
 				<br>
 				You've completed the quiz!
 			</div>
-			<div id="score-div" class="text-center mt-4 grayFeature boldFont">
+			<div id="score-div" class="text-center mt-4 grayFeature font-weight-bold">
 			</div>
 
-			<br>
-			<br>
-
-			<button href="#" id="startQuizButton" class="btn btn-primary active quizStart" role="button" aria-pressed="true">Retake the quiz!</button>			
+			<div class="mt-5 d-flex justify-content-center">
+				<a href="/learn/1" id="startLearnButton" class="btn btn-primary mx-2" role="button">Learn again</a>			
+				<a href="/quiz" id="" class="btn btn-primary mx-2" role="button">Retake the quiz!</a>	
+			</div>	
 			
 		</div>
 {% endblock %}

@@ -108,7 +108,6 @@ function buildTerrain(terrain, cars_from, cars_to, horizontalLane, verticalLane)
 						div.addClass('droppable')
 						div.attr('id', key);
 						// div.addClass('ui-droppable')
-						console.log(div)
 						// Insert droppable here
 					}
 				}
@@ -174,7 +173,7 @@ function buildTerrain(terrain, cars_from, cars_to, horizontalLane, verticalLane)
 			"ui-droppable-hover": "ui-state-hover",
 			"ui-droppable-active": "ui-state-default",
 		  },
-		// accept: "#"+key
+		// accept: "#"+key,
 		drop: function( event, ui ) {
 			// Correct answer
 			if (question.answer[0] == ui.draggable.attr("id") && ui.draggable.attr("id") == $(this).attr("id")) {

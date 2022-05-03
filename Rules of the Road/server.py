@@ -181,7 +181,7 @@ questions = {
 		"answer": ["A"]
 	},
 	"6": {
-		"prompt": "Which car should go first at this intersection if they both arrived at the same time?",
+		"prompt": "Which car should go first at this intersection if they all arrived at the same time?",
 		"terrain": 		[[0, 0, 0, 0, 1, 1, 0, 0, 0, 0], #7
 						[0, 0, 0, 0, 1, 1, 0, 0, 0, 0], #6
 						[0, 0, 0, 0, 1, 1, 0, 0, 0, 0], #5

@@ -61,12 +61,4 @@ $(document).ready(function(){
 
 	})
 
-	$("#startQuizButton").click(function(){
-		console.log("start quiz")
-
-		let url = "/quiz/1"
-        location.href = url
-
-	})
-
 })
