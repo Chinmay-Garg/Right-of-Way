@@ -13,7 +13,10 @@
 	<div class="quiz-container mt-4">
 		
 		<h3>{{questions.prompt}}</h3>
-		<div class="terrain mt-4 shadow"></div>
+		<div class="quiz-content">
+			<div class="terrain mt-4 shadow"></div>
+			<div class="correct-answer"></div>
+		</div>
 		<!-- {{questions.terrain}} -->
 		<div class="quiz-feedback mt-4"></div>
 		<div class="text-center mt-4 pb-4">
@@ -36,8 +39,8 @@
 				<div class="modal-body">
 								
 					<div class="row m-4 d-flex flex-column justify-content-center">
-						<div class="col-md-5">
-							<img src={{questions.hint.image}} class="img-responsive d-block mx-auto">
+						<div class="col-md-12">
+							<img src={{questions.hint.image}} class="img-responsive w-100 d-block mx-auto">
 						</div>
 						<div class="col-md-12 mt-3 d-flex align-items-center">
 							<div>{{questions.hint.summary}}</div>

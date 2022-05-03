@@ -104,11 +104,47 @@ function buildTerrain(terrain, cars_from, cars_to, horizontalLane, verticalLane)
 				for(let [key, value] of Object.entries(cars_to)) {
 					let x = value[0]
 					let y = value[1]
+					let key1 = value[4]
 					if(x == parseInt(r) && y == parseInt(column)) {
 						div.addClass('droppable')
 						div.attr('id', key);
-						// div.addClass('ui-droppable')
+						div.addClass('ui-droppable')
 						// Insert droppable here
+						$(div).droppable({
+							classes: {
+								"ui-droppable-hover": "ui-state-hover",
+								"ui-droppable-active": "ui-state-default",
+							  },
+							accept: "#"+key1,
+							drop: function( event, ui ) {
+								// Correct answer
+								if (question.answer[0] == ui.draggable.attr("id") && ui.draggable.attr("id") == $(this).attr("id")) {
+									n_correct = parseInt(sessionStorage.getItem("n_correct"))
+									n_correct = n_correct + 1
+									sessionStorage.setItem("n_correct",n_correct);
+									console.log("correct: " + n_correct)
+					
+									$('div.quiz-feedback').text("Correct");
+									$('div.quiz-feedback').addClass('success');
+								} else {
+									// Incorrect answer
+									$('div.quiz-feedback').text("Incorrect");
+									$('div.quiz-feedback').addClass('warning');
+								}
+								$(".car").draggable({ 
+									disabled: true,
+									classes: {
+										"ui-draggable": ""
+									} });
+								let page_id =  window.location.href.slice(-1);
+								let solution_img = $(`<img src="/static/solution_${page_id}.png">`)
+								$('.correct-answer').append(solution_img)
+								let explaination = $('<p class="text-center">')
+								explaination.html('Text here')
+								$('.correct-answer').prepend(explaination)
+								document.getElementById('testNext').disabled = false;
+							  }
+						})
 					}
 				}
 			}
@@ -168,35 +204,6 @@ function buildTerrain(terrain, cars_from, cars_to, horizontalLane, verticalLane)
 			"ui-draggable": "mouse-hover"
 		}
 	});
-	$('.droppable').droppable({
-		classes: {
-			"ui-droppable-hover": "ui-state-hover",
-			"ui-droppable-active": "ui-state-default",
-		  },
-		// accept: "#"+key,
-		drop: function( event, ui ) {
-			// Correct answer
-			if (question.answer[0] == ui.draggable.attr("id") && ui.draggable.attr("id") == $(this).attr("id")) {
-				n_correct = parseInt(sessionStorage.getItem("n_correct"))
-				n_correct = n_correct + 1
-				sessionStorage.setItem("n_correct",n_correct);
-				console.log("correct: " + n_correct)
-
-				$('div.quiz-feedback').text("Correct");
-				$('div.quiz-feedback').addClass('success');
-			} else {
-				// Incorrect answer
-				$('div.quiz-feedback').text("Incorrect");
-				$('div.quiz-feedback').addClass('warning');
-			}
-			$(".car").draggable({ 
-				disabled: true,
-				classes: {
-					"ui-draggable": ""
-				} });
-
-			document.getElementById('testNext').disabled = false;
-		  }
-	})
+	
 	
 }

@@ -198,6 +198,12 @@ button{
     width: 100%;
 }
 
+.quiz-content {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
 .terrain {
     display: flex;
     flex-direction: column;
