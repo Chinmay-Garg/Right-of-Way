@@ -18,7 +18,7 @@ $(document).ready(function(){
 
 		$('.progress-bar').width(currentIdx*100/n_questions+"%")
 		$('div.progress-bar').text(currentIdx+"/"+n_questions);
-		buildTerrain(question.terrain, question.cars_from, question.cars_to, question.horizontal_lane, question.vertical_lane)
+		buildTerrain(question.terrain, question.cars_from, question.cars_to, question.horizontal_lane, question.vertical_lane, question.answer_summary)
 	}
 
 	else{
@@ -70,7 +70,7 @@ $(document).ready(function(){
 
 })
 
-function buildTerrain(terrain, cars_from, cars_to, horizontalLane, verticalLane) {
+function buildTerrain(terrain, cars_from, cars_to, horizontalLane, verticalLane, answer_summary) {
 	// console.log(cars_from)
 	
 	for(var r in terrain) {
@@ -124,12 +124,12 @@ function buildTerrain(terrain, cars_from, cars_to, horizontalLane, verticalLane)
 									sessionStorage.setItem("n_correct",n_correct);
 									console.log("correct: " + n_correct)
 					
-									$('div.quiz-feedback').text("Correct");
-									$('div.quiz-feedback').addClass('success');
+									$('span.quiz-feedback').text("Correct");
+									$('span.quiz-feedback').addClass('success');
 								} else {
 									// Incorrect answer
-									$('div.quiz-feedback').text("Incorrect");
-									$('div.quiz-feedback').addClass('warning');
+									$('span.quiz-feedback').text("Incorrect");
+									$('span.quiz-feedback').addClass('warning');
 								}
 								$(".car").draggable({ 
 									disabled: true,
@@ -138,10 +138,10 @@ function buildTerrain(terrain, cars_from, cars_to, horizontalLane, verticalLane)
 									} });
 								let page_id =  window.location.href.slice(-1);
 								let solution_img = $(`<img src="/static/solution_${page_id}.png">`)
-								$('.correct-answer').append(solution_img)
-								let explaination = $('<p class="text-center">')
-								explaination.html('Text here')
-								$('.correct-answer').prepend(explaination)
+								$('.correct-answer').prepend(solution_img)
+								let explanation = $('<p class="text-center">')
+								explanation.html(answer_summary)
+								$('.correct-answer').append(explanation)
 								document.getElementById('testNext').disabled = false;
 							  }
 						})

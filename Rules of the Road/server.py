@@ -75,9 +75,10 @@ questions = {
 			"image": "https://static.epermittest.com/media/filer_public_thumbnails/filer_public/a7/c7/a7c7623e-b7ba-46b8-a2bd-146572859e97/right-of-way-at-intersections.jpg__1920x0_q100_subsampling-2_upscale.jpg",
 			"video": "learning3.mp4",
 			"source": "https://www.youtube.com/embed/VWXgqPzADGQ?start=43&end=92",
-			"summary": "In the case where multiple cars get to the intersection at the same time, he driver on the rightmost side should go first. If there are four cars in the intersection, whoever slowly advances first should go. "
+			"summary": "In the case where multiple cars get to the intersection at the same time, the driver on the rightmost side should go first. If there are four cars in the intersection, whoever slowly advances first should go. "
 	},
-		"answer": ["B"]
+		"answer": ["B"],
+		"answer_summary": "Yellow car should go first as it's on the rightmost side."
 	},
 	"2": {
 		"prompt": "Which car should go first at this intersection if the car in the blue box arrived first?",
@@ -102,7 +103,8 @@ questions = {
 			"summary": "A controlled intersection a point where multiple roads cross over, and it being controlled means it has signs, traffic lights, and/or road signs to guide drivers. " +
 			"A tool to manage who goes first is FIFO, or first in, first out, meaning the driver that stops at the intersection first has the right of way."
 	},
-		"answer": ["A"]
+		"answer": ["A"],
+		"answer_summary": "Blue car should go first as it arrived first at the intersection."
 	},
 	"3": {
 		"prompt": "Which car should go first at this intersection if they both arrived at the same time?",
@@ -126,7 +128,8 @@ questions = {
 			"source": "https://www.youtube.com/embed/VWXgqPzADGQ?start=43&end=92",
 			"summary": "In the case where multiple cars get to the intersection at the same time, the driver on the rightmost side should go first. If there are four cars in the intersection, whoever slowly advances first should go. "
 	},
-		"answer": ["A"]
+		"answer": ["A"],
+		"answer_summary": "Blue car should go first as it is continuing straight and yellow car must yield since it's turning."
 	},
 	"4": {
 		"prompt": "Which car has the right-of-way if the road on the top is ending?",
@@ -150,7 +153,8 @@ questions = {
 			"summary": "A controlled intersection a point where multiple roads cross over, and it being controlled means it has signs, traffic lights, and/or road signs to guide drivers. " +
 			"A tool to manage who goes first is FIFO, or first in, first out, meaning the driver that stops at the intersection first has the right of way."
 	},
-		"answer": ["B"]
+		"answer": ["B"],
+		"answer_summary": "Yellow car should go first as it is ahead of the blue car when the lane starts to merge."
 	},
 	"5": {
 		"prompt": "Which way should car A yield if an emergency vehicle (with active sirens) is behind it?",
@@ -178,7 +182,8 @@ questions = {
 			"summary": "In the case of an emergency vehicle passing, it is important to allow them the right of way and give them ample space soon as possible in a safe manner. " +
 			"The rule of thumb is to move to the closest lane, moving to the right side if you are in the center lane."
 		},
-		"answer": ["A"]
+		"answer": ["A"],
+		"answer_summary": "Blue car should move towards it's right lange as that is the closest lane."
 	},
 	"6": {
 		"prompt": "Which car should go first at this intersection if they all arrived at the same time?",
@@ -202,7 +207,9 @@ questions = {
 			"source": "https://www.youtube.com/embed/VWXgqPzADGQ?start=43&end=92",
 			"summary": "In the case where multiple cars get to the intersection at the same time, the driver on the rightmost side should go first. If there are four cars in the intersection, whoever slowly advances first should go. "
 	},
-		"answer": ["C", "A", "B"]
+		"answer": ["C", "A", "B"],
+		"answer_summary": "Red car should go first as it's on the rightmost side with no car on its right."
+		
 	}
 }
 
