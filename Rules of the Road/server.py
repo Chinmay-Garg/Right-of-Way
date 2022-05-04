@@ -183,7 +183,7 @@ questions = {
 			"The rule of thumb is to move to the closest lane, moving to the right side if you are in the center lane."
 		},
 		"answer": ["A"],
-		"answer_summary": "Blue car should move towards it's right lange as that is the closest lane."
+		"answer_summary": "Blue car should move towards it's right lane as that is the closest lane."
 	},
 	"6": {
 		"prompt": "Which car should go first at this intersection if they all arrived at the same time?",
