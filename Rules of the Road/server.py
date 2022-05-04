@@ -157,7 +157,7 @@ questions = {
 		"answer_summary": "Yellow car should go first as it is ahead of the blue car when the lane starts to merge."
 	},
 	"5": {
-		"prompt": "Which way should car A yield if an emergency vehicle (with active sirens) is behind it?",
+		"prompt": "Which way should a car yield if an emergency vehicle (with active sirens) is behind it?",
 		"terrain":     [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], #7 0
 						[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], #6 1
 						[1, 1, 1, 1, 1, 1, 1, 1, 1, 1], #5 2
