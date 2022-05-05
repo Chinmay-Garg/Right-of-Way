@@ -19,7 +19,7 @@ topics = {
 		"image": "https://static.epermittest.com/media/filer_public_thumbnails/filer_public/a7/c7/a7c7623e-b7ba-46b8-a2bd-146572859e97/right-of-way-at-intersections.jpg__1920x0_q100_subsampling-2_upscale.jpg",
 		"video": "learning2.mp4",
 		"source": "https://www.youtube.com/embed/VWXgqPzADGQ?start=18&end=43",
-		"summary": "A controlled intersection a point where multiple roads cross over, and it being controlled means it has signs, traffic lights, and/or road signs to guide drivers. " +
+		"summary": "A controlled intersection is a point where multiple roads cross over. It being controlled means it has signs, traffic lights, and/or road signs to guide drivers. " +
 		"A tool to manage who goes first is FIFO, or first in, first out, meaning the driver that stops at the intersection first has the right of way." 
 	},
 	"3": {
@@ -100,7 +100,7 @@ questions = {
 			"image": "https://static.epermittest.com/media/filer_public_thumbnails/filer_public/a7/c7/a7c7623e-b7ba-46b8-a2bd-146572859e97/right-of-way-at-intersections.jpg__1920x0_q100_subsampling-2_upscale.jpg",
 			"video": "learning2.mp4",
 			"source": "https://www.youtube.com/embed/VWXgqPzADGQ?start=18&end=43",
-			"summary": "A controlled intersection a point where multiple roads cross over, and it being controlled means it has signs, traffic lights, and/or road signs to guide drivers. " +
+			"summary": "A controlled intersection is a point where multiple roads cross over. It being controlled means it has signs, traffic lights, and/or road signs to guide drivers. " +
 			"A tool to manage who goes first is FIFO, or first in, first out, meaning the driver that stops at the intersection first has the right of way."
 	},
 		"answer": ["A"],
@@ -150,7 +150,7 @@ questions = {
 			"image": "https://static.epermittest.com/media/filer_public_thumbnails/filer_public/a7/c7/a7c7623e-b7ba-46b8-a2bd-146572859e97/right-of-way-at-intersections.jpg__1920x0_q100_subsampling-2_upscale.jpg",
 			"video": "learning2.mp4",
 			"source": "https://www.youtube.com/embed/VWXgqPzADGQ?start=18&end=43",
-			"summary": "A controlled intersection a point where multiple roads cross over, and it being controlled means it has signs, traffic lights, and/or road signs to guide drivers. " +
+			"summary": "A controlled intersection is a point where multiple roads cross over. It being controlled means it has signs, traffic lights, and/or road signs to guide drivers. " +
 			"A tool to manage who goes first is FIFO, or first in, first out, meaning the driver that stops at the intersection first has the right of way."
 	},
 		"answer": ["B"],
@@ -183,7 +183,7 @@ questions = {
 			"The rule of thumb is to move to the closest lane, moving to the right side if you are in the center lane."
 		},
 		"answer": ["A"],
-		"answer_summary": "Blue car should move towards it's right lane as that is the closest lane."
+		"answer_summary": "Blue car should move towards the right lane as that is the closest lane."
 	},
 	"6": {
 		"prompt": "Which car should go first at this intersection if they all arrived at the same time?",
